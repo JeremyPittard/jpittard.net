@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* bits and bobs */
+
+::selection {
+  @apply bg-gondola-100;
+  @apply text-gondola;
+}
+
+.card {
+  transition: all 150ms linear;
+}
+
+@keyframes flickerText {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  to {
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #f0f, 0 0 5px #f0f,
+      0 0 5px #f0f, 0 0 5px #f0f, 0 0 5px #f0f;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
