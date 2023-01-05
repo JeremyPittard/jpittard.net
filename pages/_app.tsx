@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import { useRouter } from "next/router";
 import { Atkinson_Hyperlegible, Lexend } from "@next/font/google";
 import { PrefersColourSchemeDark } from "../helpers/helpers";
+import Footer from "../components/Footer";
 
 const mailgoConfig: MailgoConfig = {
   showFooter: false,
@@ -35,6 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <AnimatePresence mode="wait" initial={true}>
         <Component {...pageProps} key={router.pathname} />;
       </AnimatePresence>
+      <Footer />
     </>
   );
 }

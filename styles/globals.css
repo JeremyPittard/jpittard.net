@@ -24,6 +24,8 @@
   to {
     text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #f0f, 0 0 5px #f0f,
       0 0 5px #f0f, 0 0 5px #f0f, 0 0 5px #f0f;
+    box-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 3px #f0f, 0 0 5px #f0f,
+      0 0 5px #f0f, 0 0 5px #f0f, 0 0 5px #f0f;
   }
 
   20%,
