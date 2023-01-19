@@ -62,7 +62,7 @@ const Card = ({
 const LinkWrap = ({ children, link, linkTarget = "self" }: linkProps) => {
   if (link) {
     return (
-      <Link href={link} target={`_${linkTarget}`}>
+      <Link href={link} target={`_${linkTarget}`} scroll={false}>
         {children}
       </Link>
     );

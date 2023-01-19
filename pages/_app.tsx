@@ -16,6 +16,12 @@ const mailgoConfig: MailgoConfig = {
 const atkinson = Atkinson_Hyperlegible({ weight: "400", subsets: ["latin"] });
 const lexend = Lexend({ weight: "400", subsets: ["latin"] });
 
+function handleExitComplete() {
+  if (typeof window !== "undefined") {
+    window.scrollTo({ top: 0 });
+  }
+}
+
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     mailgo({ ...mailgoConfig, dark: PrefersColourSchemeDark() });
@@ -33,7 +39,11 @@ export default function App({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Header />
-      <AnimatePresence mode="wait" initial={true}>
+      <AnimatePresence
+        mode="wait"
+        initial={true}
+        onExitComplete={handleExitComplete}
+      >
         <Component {...pageProps} key={router.pathname} />;
       </AnimatePresence>
       <Footer />

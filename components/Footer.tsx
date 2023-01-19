@@ -7,15 +7,23 @@ const Footer = () => {
       <nav>
         <ul className="flex gap-4 text-sm items-center justify-start">
           <li>
-            <Link href={`mailto:jeremy@jpittard.net`}>get in touch</Link>
-          </li>
-          <li>
-            <Link href={"https://www.facebook.com/Jpittardweb"} target="_blank">
-              facebook
+            <Link href={"/"} scroll={false}>
+              home
             </Link>
           </li>
           <li>
-            <Link href={"/"}>home</Link>
+            <Link href={`mailto:jeremy@jpittard.net`} scroll={false}>
+              get in touch
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={"https://www.facebook.com/Jpittardweb"}
+              target="_blank"
+              scroll={false}
+            >
+              facebook
+            </Link>
           </li>
         </ul>
       </nav>
