@@ -22,7 +22,7 @@ const IntroContent = () => {
             href={`mailto:jeremy@jpittard.net`}
             className="font-bold text-neon-green"
           >
-            get in touch
+            get in touch.
           </Link>
         </p>
       </div>

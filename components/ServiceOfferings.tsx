@@ -2,13 +2,13 @@ import Card from "./Card";
 
 const ServiceOfferings = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between py-32">
+    <div className="flex flex-col md:flex-row justify-between py-32 px-4 md:px-1">
       <Card title={`DIY Solutions`} link="/diy-solutions">
         <p>
           Tools to help identify and fix issues with accessibility, page speed
-          and core web vitals
+          and core web vitals.
         </p>
-        <p>coming soon</p>
+        <p>coming soon...</p>
       </Card>
       <Card
         title={`Complete Builds`}
@@ -17,7 +17,7 @@ const ServiceOfferings = () => {
       >
         <p>
           Websites and Apps built from the ground up, SEO ready, focusing on
-          accessibility, page speed and a great user experience
+          accessibility, page speed and a great user experience.
         </p>
       </Card>
       <Card
@@ -27,7 +27,7 @@ const ServiceOfferings = () => {
       >
         <p>
           Reviews in Accessibility, UI/UX, Core Web Vitals and more. Plus
-          coaching on all things digital
+          coaching on all things digital.
         </p>
       </Card>
     </div>
