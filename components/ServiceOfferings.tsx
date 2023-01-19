@@ -2,7 +2,7 @@ import Card from "./Card";
 
 const ServiceOfferings = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between pt-32">
+    <div className="flex flex-col md:flex-row justify-between py-32">
       <Card title={`DIY Solutions`} link="/diy-solutions">
         <p>
           Tools to help identify and fix issues with accessibility, page speed
