@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <AnimatePresence mode="wait" initial={true}>
         <Component {...pageProps} key={router.pathname} />;
       </AnimatePresence>
-      {/* <Footer /> */}
+      <Footer />
     </>
     // unsure about footer
   );

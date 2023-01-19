@@ -3,20 +3,23 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="max-w-[80%] md:max-w-4xl mx-auto py-3 px-2">
+    <footer className="max-w-[80%] md:max-w-4xl mx-auto py-3 px-2 border-t-[1px] dark:border-alto-50 border-gondola mt-24">
       <nav>
-        <ul className="flex gap-4 text-sm mt-24 pt-32">
+        <ul className="flex gap-4 text-sm items-center justify-start">
+          <li>
+            <Link href={`mailto:jeremy@jpittard.net`}>get in touch</Link>
+          </li>
           <li>
             <Link href={"https://www.facebook.com/Jpittardweb"} target="_blank">
-              fb
+              facebook
             </Link>
           </li>
           <li>
-            <Link href={"/home"}>home</Link>
+            <Link href={"/"}>home</Link>
           </li>
         </ul>
       </nav>
-    </div>
+    </footer>
   );
 };
 
