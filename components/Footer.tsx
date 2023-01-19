@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="max-w-[80%] md:max-w-4xl mx-auto py-3 px-2 border-t-[1px] dark:border-alto-50 border-gondola mt-24">
+    <footer className="max-w-[80%] md:max-w-4xl mx-auto py-3 px-2 border-t-[1px] border-alto-50">
       <nav>
         <ul className="flex gap-4 text-sm items-center justify-start">
           <li>
