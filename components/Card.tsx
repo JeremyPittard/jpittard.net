@@ -10,6 +10,11 @@ interface cardProps {
   link?: string;
   linkTarget?: "self" | "top" | "parent" | "blank";
 }
+interface linkProps {
+  children?: React.ReactNode;
+  link?: string;
+  linkTarget?: "self" | "top" | "parent" | "blank";
+}
 
 const Card = ({
   children,
@@ -55,7 +60,7 @@ const Card = ({
   );
 };
 
-const LinkWrap = ({ children, link, linkTarget = "self" }) => {
+const LinkWrap = ({ children, link, linkTarget = "self" }: linkProps) => {
   if (link) {
     return (
       <Link href={link} target={`_${linkTarget}`}>
