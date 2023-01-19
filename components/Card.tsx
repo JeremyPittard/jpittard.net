@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import ReadMore from "./ReadMore";
 
 interface cardProps {
   title: string;
