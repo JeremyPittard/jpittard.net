@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 import resolveConfig from "tailwindcss/resolveConfig";
 import tailwindConfig from "../tailwind.config";
 
-const fullConfig = resolveConfig(tailwindConfig);
+const fullConfig: any = resolveConfig(tailwindConfig);
 
 const mailgoConfig: MailgoConfig = {
   showFooter: false,
@@ -46,6 +46,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }
         `}
       </style>
+
       <Header />
       <AnimatePresence
         mode="wait"
