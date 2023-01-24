@@ -1,9 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Content, Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import IntroContent from "../components/IntroContent";
 import ServiceOfferings from "../components/ServiceOfferings";
@@ -18,6 +15,7 @@ export default function Home() {
         <motion.main>
           <IntroContent />
           <ServiceOfferings />
+          <RecommendedServicesIntro />
         </motion.main>
       </Layout>
     </>
