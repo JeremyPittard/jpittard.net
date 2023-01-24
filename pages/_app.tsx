@@ -9,6 +9,10 @@ import { useRouter } from "next/router";
 import { Atkinson_Hyperlegible, Lexend } from "@next/font/google";
 import { PrefersColourSchemeDark } from "../helpers/helpers";
 import Footer from "../components/Footer";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../tailwind.config";
+
+const fullConfig = resolveConfig(tailwindConfig);
 
 const mailgoConfig: MailgoConfig = {
   showFooter: false,
@@ -35,6 +39,10 @@ export default function App({ Component, pageProps }: AppProps) {
           :root {
             --atkinson-font: ${atkinson.style.fontFamily};
             --lexend-font: ${lexend.style.fontFamily};
+            --neon-green: ${fullConfig.theme?.colors["neon-green"]["500"]};
+            --dark-green: ${fullConfig.theme?.colors["neon-green"]["900"]};
+            --alto: ${fullConfig.theme?.colors.alto["500"]};
+            --gondola: ${fullConfig.theme?.colors.gondola["500"]};
           }
         `}
       </style>

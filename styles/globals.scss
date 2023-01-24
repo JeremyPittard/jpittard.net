@@ -14,17 +14,25 @@
 }
 
 .hoverline {
+  will-change: color;
   transition: all 200ms linear;
   position: relative;
+  --bgColor: var(--alto);
+  --textColor: var(--gondola);
+
+  &.text-neon-green {
+    --bgColor: var(--neon-green);
+    --textColor: var(--dark-green);
+  }
 
   &::after {
     content: "";
-    height: 110%;
-    width: 110%;
+    height: 105%;
+    width: 105%;
     position: absolute;
-    border: 2px solid currentColor;
-    bottom: -5%;
-    left: -5%;
+    background-color: var(--bgColor);
+    bottom: -2.5%;
+    left: -2.5%;
     transform: scaleY(0);
     transform-origin: bottom;
     z-index: -1;
@@ -35,8 +43,8 @@
     height: 2px;
     width: 105%;
     position: absolute;
-    background-color: currentColor;
-    bottom: -5%;
+    background-color: var(--bgColor);
+    bottom: -2.5%;
     left: -2.5%;
     transform-origin: bottom;
     z-index: -1;
@@ -44,6 +52,7 @@
   }
 
   &:hover {
+    color: var(--textColor);
     &::after {
       transform: scaleY(1);
     }
