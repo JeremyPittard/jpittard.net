@@ -8,7 +8,7 @@ const Header = () => {
   const router = useRouter();
   return (
     <header className="pt-24 py-3 px-2">
-      <nav className=" py-3 px-2 max-w-[80%] md:max-w-4xl mx-auto">
+      <nav className=" py-3 px-2 max-w-[80%] md:max-w-3xl mx-auto">
         <ul className="flex items-center m-auto flex-row">
           <li>
             <Link href={"/"} scroll={false}>

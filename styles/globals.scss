@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* bits and bobs */
+
+::selection {
+  @apply bg-gondola-100;
+  @apply text-gondola;
+}
+
+.card {
+  transition: all 150ms linear;
+}
+
+.hoverline {
+  transition: all 200ms linear;
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 110%;
+    width: 110%;
+    position: absolute;
+    border: 2px solid currentColor;
+    bottom: -5%;
+    left: -5%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    z-index: -1;
+    transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  }
+  &::before {
+    content: "";
+    height: 2px;
+    width: 105%;
+    position: absolute;
+    background-color: currentColor;
+    bottom: -5%;
+    left: -2.5%;
+    transform-origin: bottom;
+    z-index: -1;
+    // transition: all 200ms cubic-bezier(0.175, 0.885, 0.32, 1.175);
+  }
+
+  &:hover {
+    &::after {
+      transform: scaleY(1);
+    }
+  }
+}

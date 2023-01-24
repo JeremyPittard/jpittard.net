@@ -7,6 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import IntroContent from "../components/IntroContent";
 import ServiceOfferings from "../components/ServiceOfferings";
+import RecommendedServicesIntro from "../components/RecommendedServicesIntro";
 
 const inter = Inter({ subsets: ["latin"] });
 

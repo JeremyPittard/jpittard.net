@@ -1,13 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import Card from "./Card";
-import Layout from "./Layout";
-import ServiceOfferings from "./ServiceOfferings";
 
 const IntroContent = () => {
   return (
     <>
-      <div className="max-w-[80%] md:max-w-4xl mx-auto mb-24">
+      <div className="max-w-[80%] md:max-w-3xl mx-auto mb-24">
         <h1 className="pt-12 pb-6">Digital consulting and web development.</h1>
         <p className="py-6">
           Specialising in helping
@@ -20,7 +17,7 @@ const IntroContent = () => {
         <p className="py-6">
           <Link
             href={`mailto:jeremy@jpittard.net`}
-            className="font-bold text-neon-green"
+            className="font-bold text-neon-green hoverline"
           >
             get in touch.
           </Link>

@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import { MailgoConfig } from "mailgo";
 import mailgo from "mailgo";

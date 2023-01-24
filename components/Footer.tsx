@@ -7,12 +7,16 @@ const Footer = () => {
       <nav>
         <ul className="flex gap-4 text-sm items-center justify-start">
           <li>
-            <Link href={"/"} scroll={false}>
+            <Link href={"/"} scroll={false} className="hoverline">
               home
             </Link>
           </li>
           <li>
-            <Link href={`mailto:jeremy@jpittard.net`} scroll={false}>
+            <Link
+              href={`mailto:jeremy@jpittard.net`}
+              scroll={false}
+              className="hoverline"
+            >
               get in touch
             </Link>
           </li>
@@ -21,6 +25,7 @@ const Footer = () => {
               href={"https://www.facebook.com/Jpittardweb"}
               target="_blank"
               scroll={false}
+              className="hoverline"
             >
               facebook
             </Link>
