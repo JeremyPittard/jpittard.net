@@ -21,7 +21,7 @@ const ServiceOfferings = () => {
         </p>
       </Card>
       <Card
-        title={`Audits & Consulting`}
+        title={`Audits and Consulting`}
         bgClass="bg-neon-green"
         link="/website-audits"
       >

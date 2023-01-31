@@ -19,7 +19,7 @@ const websiteBuild = () => {
         </p>
         <p className="py-6">
           <Link
-            href={`mailto:jeremy@jpittard.net`}
+            href={`mailto:jeremy@jpittard.net?subject=Website and Application builds`}
             className="font-bold text-neon-green hoverline"
           >
             get in touch.
