@@ -1,38 +1,34 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
 import Logo from "./Logo";
 
 const Header = () => {
   const router = useRouter();
   return (
     <header className="pt-24 py-3 px-2">
-      <nav className=" py-3 px-2 max-w-[80%] md:max-w-3xl mx-auto">
-        <ul className="flex items-center m-auto flex-row">
+      <nav className=" py-3 px-2 max-w-[80%] md:max-w-3xl mx-auto flex justify-between">
+        <Link href={"/"} scroll={false}>
+          <Logo />
+        </Link>
+        <ul className="flex gap-4 text-lg items-center justify-start">
           <li>
-            <Link href={"/"} scroll={false}>
-              <Logo />
+            <Link className="hoverline" href={"/store/diy-solutions"}>
+              tools
             </Link>
           </li>
-          {router.pathname != "/" && (
-            <li className="ml-auto">
-              <Link href="/" className="text-sm hoverline" scroll={false}>
-                Go home
-              </Link>
-            </li>
-          )}
-          <li className="ml-auto hidden">
-            <Link
-              href={"https://www.facebook.com/Jpittardweb"}
-              target="_blank"
-              scroll={false}
-            >
-              fb
+          <li>
+            <Link className="hoverline" href={"/website-builds"} scroll={false}>
+              builds
             </Link>
           </li>
-          <li className=" hidden">
-            <Link href={"/store"} scroll={false}>
-              store
+          <li>
+            <Link className="hoverline" href={"/blog"} scroll={false}>
+              blog
+            </Link>
+          </li>
+          <li>
+            <Link className="hoverline" href={"/website-audits"} scroll={false}>
+              consulting
             </Link>
           </li>
         </ul>

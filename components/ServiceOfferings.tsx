@@ -3,7 +3,7 @@ import Card from "./Card";
 const ServiceOfferings = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between py-24 px-4 md:px-1">
-      <Card title={`DIY Solutions`} link="/diy-solutions">
+      <Card title={`DIY Solutions`} link="/store/diy-solutions">
         <p>
           Tools to help identify and fix issues with accessibility, page speed
           and core web vitals.
