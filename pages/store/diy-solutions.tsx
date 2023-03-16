@@ -25,13 +25,13 @@ const DiySolutions = () => {
           Coming Soon...
         </span>
       </div>
-      <input
+      {/* <input
         type="text"
         onChange={(event) => setUrlToCheck(event.target.value)}
       />
       <button type="button" onClick={() => getA11y(urlToCheck)}>
         submit
-      </button>
+      </button> */}
       <ServiceOfferings />
     </Layout>
   );
