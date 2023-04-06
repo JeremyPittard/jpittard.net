@@ -5,8 +5,8 @@ import ServiceOfferings from "../components/ServiceOfferings";
 const websiteBuild = () => {
   return (
     <Layout>
-      <div className="max-w-[80%] md:max-w-3xl mx-auto mb-24">
-        <h1 className="pt-12 pb-6">Website and Application builds</h1>
+      <div className="max-w-[80%] lg:max-w-3xl mx-auto mb-24">
+        <h1 className="md:pt-12 py-6">Website and Application builds</h1>
         <p className="py-6">
           creating
           <span className="text-neon-pink font-bold"> accessible </span>

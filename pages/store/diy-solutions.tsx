@@ -14,8 +14,8 @@ const DiySolutions = () => {
 
   return (
     <Layout>
-      <div className="max-w-[80%] md:max-w-3xl mx-auto mb-24 pb-6">
-        <h1 className="pt-12 pb-6">DIY Tools</h1>
+      <div className="max-w-[80%] lg:max-w-3xl mx-auto mb-24 pb-6">
+        <h1 className="md:pt-12 py-6">DIY Tools</h1>
 
         <p className="py-6">
           Printable workbooks, guides and templates to help improve your sites
@@ -25,13 +25,13 @@ const DiySolutions = () => {
           Coming Soon...
         </span>
       </div>
-      {/* <input
+      <input
         type="text"
         onChange={(event) => setUrlToCheck(event.target.value)}
       />
       <button type="button" onClick={() => getA11y(urlToCheck)}>
         submit
-      </button> */}
+      </button>
       <ServiceOfferings />
     </Layout>
   );

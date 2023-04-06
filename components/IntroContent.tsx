@@ -4,8 +4,10 @@ import Link from "next/link";
 const IntroContent = () => {
   return (
     <>
-      <div className="max-w-[80%] md:max-w-3xl mx-auto mb-24">
-        <h1 className="pt-12 pb-6">Digital consulting and web development.</h1>
+      <div className="max-w-[80%] lg:max-w-3xl mx-auto mb-24">
+        <h1 className="md:pt-12 py-6">
+          Digital consulting and web development.
+        </h1>
         <p className="py-6">
           Specialising in helping
           <span className="text-neon-pink font-bold"> small businesses </span>
