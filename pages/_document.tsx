@@ -5,10 +5,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Digital Consulting & Web Development in Perht</title>
+        <title>Digital Consulting & Web Development in Perth</title>
         <meta
           name="description"
-          content="Perth Web Development and Consulting"
+          content="Specialising in helping small businesses and sports clubs kick off and improve their digital presence."
         />
         <link
           rel="icon"
