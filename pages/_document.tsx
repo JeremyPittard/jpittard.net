@@ -31,7 +31,10 @@ export default function Document() {
           content="Specialising in helping small businesses and sports clubs kick off and improve their digital presence."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/img/ogimage.png" />
+        <meta
+          property="og:image"
+          content="https://jpittard.net/img/ogimage.png"
+        />
       </Head>
       <body className="text-4xl bg-gondola text-alto">
         <Main />
