@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="pt-3 lg:pt-24 py-3 px-2">
       <nav className=" py-3 px-2 max-w-[80%] lg:max-w-3xl mx-auto flex justify-between">
-        <Link href={"/"} scroll={false} title="home link">
+        <Link href={"/"} scroll={false} aria-label="go to home page">
           <Logo />
         </Link>
         <ul className="flex gap-4 text-lg items-center justify-start">
