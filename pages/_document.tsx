@@ -20,6 +20,18 @@ export default function Document() {
           href="/favicon-alto.ico"
           media="(prefers-color-scheme: dark)"
         />
+        <meta
+          property="og:title"
+          content="Digital consulting and web development."
+        />
+        <meta property="og:site_name" content="jpittard.net" />
+        <meta property="og:url" content="https://jpittard.net" />
+        <meta
+          property="og:description"
+          content="Specialising in helping small businesses and sports clubs kick off and improve their digital presence."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/img/ogimage.png" />
       </Head>
       <body className="text-4xl bg-gondola text-alto">
         <Main />
