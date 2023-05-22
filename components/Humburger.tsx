@@ -12,8 +12,9 @@ const Hamburger = ({ isOpen = false }) => {
         }}
         type="button"
         className="p-2"
+        aria-label="open navigation menu"
       >
-        <svg width="49" height="37" viewBox="0 0 49 37">
+        <svg width="25" height="19" viewBox="0 0 49 37">
           <path
             d="M42 6H45H46L48 4.5L46 3.5L42 1L6 1H3L1 2L3 3.5L6 6L42 6Z"
             fill="currentColor"
@@ -42,8 +43,12 @@ const Hamburger = ({ isOpen = false }) => {
           duration: 0.25,
         }}
       >
-        <button type="button" className="p-2">
-          <svg width="38" height="37" viewBox="0 0 38 37">
+        <button
+          type="button"
+          className="p-2"
+          aria-label="close navigation menu"
+        >
+          <svg width="19" height="19" viewBox="0 0 38 37">
             <path
               d="M33.5269 7.77817L35.6482 5.65685L36.3553 4.94975L36.7089 2.47487L34.5876 3.18198L29.9914 4.24264L4.53554 29.6985L2.41422 31.8198L1.70711 33.9411L4.18199 33.5876L8.07107 33.234L33.5269 7.77817Z"
               fill="currentColor"

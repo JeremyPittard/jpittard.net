@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Hamburger from "./Humburger";
 import Logo from "./Logo";
+import MobileMenu from "./Mobile-Menu";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,6 +53,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
+      {isMenuOpen && <MobileMenu />}
     </header>
   );
 };

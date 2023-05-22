@@ -12,7 +12,6 @@ export default function Home() {
         <motion.main>
           <IntroContent />
           <ServiceOfferings />
-          {/* <RecommendedServicesIntro /> */}
         </motion.main>
       </Layout>
     </>

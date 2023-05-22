@@ -45,7 +45,7 @@ const Card = ({
 
   return (
     <article
-      className={`card md:w-[30%] pb-3 ${highlightClass} hover:shadow-md hover:-translate-y-1 text-xl`}
+      className={`card md:w-[30%] pb-3 ${highlightClass} hover:shadow-md hover:-translate-y-1 text-xl mb-4`}
     >
       <LinkWrap link={link} linkTarget={linkTarget}>
         <h2
