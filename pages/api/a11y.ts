@@ -17,6 +17,6 @@ export default async function handler(
     const result = await pa11y(page?.toString());
     res.status(200).json(result);
   } catch (err) {
-    res.status(500).json({ error: "this is data" });
+    res.status(500).json({ error: "server error occured" });
   }
 }
