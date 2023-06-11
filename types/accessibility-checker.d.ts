@@ -12,5 +12,5 @@ export interface pa11yIssues {
   context: string;
   selector: string;
   runner: string;
-  rennerExtras: {};
+  runnerExtras: {};
 }
