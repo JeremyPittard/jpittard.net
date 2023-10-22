@@ -5,7 +5,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Digital Consulting & Web Development in Perth</title>
         <meta
           name="description"
           content="Specialising in helping small businesses and sports clubs kick off and improve their digital presence."

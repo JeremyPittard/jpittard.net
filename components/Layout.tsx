@@ -13,7 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
       transition={{
         duration: 0.25,
       }}
-      className="max-w-6xl m-auto  py-3 px-2"
+      className="max-w-6xl m-auto py-3 px-2 min-h-[70vh]"
     >
       {children}
     </motion.div>
