@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
+const theYear = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="max-w-[80%] lg:max-w-3xl mx-auto py-3 px-2 border-t-[1px] border-alto-50 border-opacity-25">
@@ -39,6 +40,9 @@ const Footer = () => {
             >
               GitHub
             </Link>
+          </li>
+          <li>
+            <p>&copy; {theYear}</p>
           </li>
         </ul>
       </nav>
