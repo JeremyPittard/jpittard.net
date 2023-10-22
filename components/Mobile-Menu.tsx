@@ -24,28 +24,10 @@ const MobileMenu = () => {
         <li>
           <Link
             className="hoverline block font-display text-2xl py-3 px-4 font-bold"
-            href={"/website-builds"}
-            scroll={false}
-          >
-            builds
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="hoverline block font-display text-2xl py-3 px-4 font-bold"
             href={"/blog"}
             scroll={false}
           >
             blog
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="hoverline block font-display text-2xl py-3 px-4 font-bold"
-            href={"/website-audits"}
-            scroll={false}
-          >
-            consulting
           </Link>
         </li>
       </ul>
