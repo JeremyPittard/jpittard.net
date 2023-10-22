@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import ServiceOfferings from "../components/ServiceOfferings";
 
 const Blog = () => {
   return (
@@ -12,7 +11,6 @@ const Blog = () => {
           Coming Soon...
         </span>
       </div>
-      <ServiceOfferings />
     </Layout>
   );
 };

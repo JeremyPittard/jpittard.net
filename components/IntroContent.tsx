@@ -5,16 +5,16 @@ const IntroContent = () => {
   return (
     <>
       <div className="max-w-[80%] lg:max-w-3xl mx-auto mb-24">
-        <h1 className="md:pt-12 py-6">
-          Digital consulting and web development.
-        </h1>
+        <h1 className="md:pt-12 py-6">Hey, I'm JP.</h1>
+
         <p className="py-6">
-          Specialising in helping
-          <span className="text-neon-pink font-bold"> small businesses </span>
-          and
-          <span className="text-neon-pink font-bold"> sports clubs </span>
-          kick off and improve their
-          <span className=" text-neon-blue font-bold"> digital presence.</span>
+          I'm a{" "}
+          <span className="text-neon-pink font-bold">front-end developer</span>
+          &nbsp;who believes in&nbsp;
+          <span className="text-neon-blue">
+            collaboration, culture and community
+          </span>
+          .
         </p>
         <p className="py-6">
           <Link

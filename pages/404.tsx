@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import ServiceOfferings from "../components/ServiceOfferings";
 
 export default function Custom404() {
   return (
@@ -7,7 +6,6 @@ export default function Custom404() {
       <div className="max-w-[80%] lg:max-w-3xl mx-auto mb-24 pb-6">
         <h1>404 - Page Not Found</h1>
       </div>
-      <ServiceOfferings />
     </Layout>
   );
 }

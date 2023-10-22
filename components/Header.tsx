@@ -16,23 +16,6 @@ const Header = () => {
           <li>
             <Link
               className="hoverline hidden md:block"
-              href={"/store/diy-solutions"}
-            >
-              tools
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hoverline hidden md:block"
-              href={"/website-builds"}
-              scroll={false}
-            >
-              builds
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="hoverline hidden md:block"
               href={"/blog"}
               scroll={false}
             >
@@ -42,10 +25,9 @@ const Header = () => {
           <li>
             <Link
               className="hoverline hidden md:block"
-              href={"/website-audits"}
-              scroll={false}
+              href={"/store/diy-solutions"}
             >
-              consulting
+              tools
             </Link>
           </li>
           <li className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>

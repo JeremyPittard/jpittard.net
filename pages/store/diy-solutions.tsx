@@ -1,17 +1,7 @@
 import React, { FormEvent, useState } from "react";
-import { getAllJSDocTags } from "typescript";
 import Layout from "../../components/Layout";
-import ServiceOfferings from "../../components/ServiceOfferings";
 
 const DiySolutions = () => {
-  const getA11y = (url: string) => {
-    fetch(`/api/a11y?page=${url}`)
-      .then((res) => res.json())
-      .then((data) => console.log("this is data", data));
-  };
-
-  const [urlToCheck, setUrlToCheck] = useState("");
-
   return (
     <Layout>
       <div className="max-w-[80%] lg:max-w-3xl mx-auto mb-24 pb-6">
@@ -25,7 +15,6 @@ const DiySolutions = () => {
           Coming Soon...
         </span>
       </div>
-      <ServiceOfferings />
     </Layout>
   );
 };

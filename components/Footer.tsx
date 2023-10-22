@@ -22,12 +22,22 @@ const Footer = () => {
           </li>
           <li>
             <Link
-              href={"https://www.facebook.com/Jpittardweb"}
+              href={"https://www.linkedin.com/in/jeremypittard/"}
               target="_blank"
               scroll={false}
               className="hoverline"
             >
-              facebook
+              LinkedIn
+            </Link>
+          </li>
+          <li>
+            <Link
+              href={" https://github.com/JeremyPittard"}
+              target="_blank"
+              scroll={false}
+              className="hoverline"
+            >
+              github
             </Link>
           </li>
         </ul>
