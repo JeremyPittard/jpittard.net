@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="max-w-[80%] lg:max-w-3xl mx-auto py-3 px-2 border-t-[1px] border-alto-50 border-opacity-25">
       <nav>
-        <ul className="flex gap-4 text-sm items-center justify-start">
+        <ul className="flex gap-4 text-sm items-center justify-start flex-wrap">
           <li>
             <Link href={"/"} scroll={false} className="hoverline">
               home
@@ -41,7 +41,7 @@ const Footer = () => {
               GitHub
             </Link>
           </li>
-          <li>
+          <li className="md:ml-auto">
             <p>&copy; {theYear}</p>
           </li>
         </ul>
